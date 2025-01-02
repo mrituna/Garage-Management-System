@@ -1,0 +1,35 @@
+public class AmountDistributionHandler {
+    public static void amountDist(list<Appointment__c> listApp) {
+
+        list<Service_records__c> serList = new list <Service_records__c>();
+
+        for(Appointment__c app : listApp){
+
+            // Removed the assignment of Service_Amount__c as per your request.
+
+            if(app.Maintenance_service__c == true && app.Repairs__c == true && app.Replacement_Parts__c == true){
+                // No action is taken now for this condition
+            }
+            else if(app.Maintenance_service__c == true && app.Repairs__c == true){
+                // No action is taken now for this condition
+            }
+            else if(app.Maintenance_service__c == true && app.Replacement_Parts__c == true){
+                // No action is taken now for this condition
+            }
+            else if(app.Repairs__c == true && app.Replacement_Parts__c == true){
+                // No action is taken now for this condition
+            }
+            else if(app.Maintenance_service__c == true){
+                // No action is taken now for this condition
+            }
+            else if(app.Repairs__c == true){
+                // No action is taken now for this condition
+            }
+            else if(app.Replacement_Parts__c == true){
+                // No action is taken now for this condition
+            }
+
+        }
+
+    }
+}
